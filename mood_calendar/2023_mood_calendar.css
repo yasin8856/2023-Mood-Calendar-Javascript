@@ -1,0 +1,148 @@
+body{
+  text-align: center;
+}
+.mood{
+border: 0;
+background-color: white;
+border-radius: 50%;
+font-size: 30px;
+padding: 0 8px;
+transition: transform 0.2s;
+}
+.mood:hover{
+  transform: scale(1.1);
+}
+
+.mood_1{
+color: #01CC01;
+}
+.mood_2{
+color: #72e3a6;
+}
+.mood_3{
+color: #C2C200;
+}
+.mood_4{
+color: #edbf98;
+}
+.mood_5{
+color: #ea3d36;
+}
+.mood_1.selected{
+background-color: #01CC01;
+color: white;
+}
+.mood_2.selected{
+background-color: #72e3a6;
+color: white;
+}
+.mood_3.selected{
+background-color: #C2C200;
+color: white;
+}
+.mood_4.selected{
+background-color: #edbf98;
+color: white;
+}
+.mood_5.selected{
+background-color: #ea3d36;
+color: white;
+}
+
+#calendar {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: flex-start;
+margin-right:3% ;
+margin-left: 3%;
+}
+
+.months {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 70px;
+flex-wrap: wrap;
+}
+
+h3{
+margin: auto;
+}
+
+.week_days_container {
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+font-weight: normal;
+}
+
+.week_days {
+text-align: center;
+padding: 0px;
+left: -100px;
+}
+
+.days_container {
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+gap: 9.3%;
+text-align: center;
+margin-left: 7px;
+}
+
+.days {
+text-align: center;
+border: 0px solid #ccc;
+padding: 0px;
+position: relative;
+width: 20px;
+height: 20px;
+}
+
+.circle {
+display: inline-block;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background-color: #212529;
+color: white;
+text-align: center;
+line-height: 20px;
+font-size: small;
+transition: all 0.1s;
+}
+
+.days:hover .circle {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.circle.mood1{
+background-color: #01CC01;
+}
+.circle.mood2{
+background-color: #72e3a6;
+}
+.circle.mood3{
+background-color: #C2C200;
+}
+.circle.mood4{
+background-color: #edbf98;
+}
+.circle.mood5{
+background-color: #ea3d36;
+}
+
+.randomize{
+background-color: rgb(41, 74, 74);
+color: white;
+border-radius: 50%;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.clear{
+background-color: rgb(63, 135, 18);
+color: white;
+border-radius: 50%;
+margin-top: 20px;
+margin-bottom: 20px;
+}
