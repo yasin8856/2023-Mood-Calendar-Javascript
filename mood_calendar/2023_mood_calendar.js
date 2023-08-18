@@ -87,9 +87,9 @@ clear.addEventListener("click", function(){
 })
 
 random.addEventListener("click", function(){
-    var moods =["mood1","mood2","mood3","mood4","mood5"];
+    var moods =["circle mood1", "circle mood2", "circle mood3", "circle mood4", "circle mood5"];
     for(var i=0; i<365; i++){
         var randomIndex = Math.floor(Math.random() * moods.length);
         var circle = document.querySelectorAll(".circle")[i];
-        circle.classList.toggle(moods[randomIndex]);
+        circle.className = moods[randomIndex];
 }});
